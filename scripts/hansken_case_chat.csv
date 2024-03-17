@@ -1,0 +1,9 @@
+entity_hansken;property_hansken;format_hansken;cardinality_hansken;datastructure_hansken;property_CASE;entity_CASE;format_CASE;cardinality_CASE
+;;;;;core:hasFacet;observable:Message;object property, range: observable:MessageFacet;0 *
+chat_message;application;string;0 1;;observable:application;observable:MessageFacet;string;0 1
+chat_message;from;string;0 1;;observable:from;observable:MessageFacet;string;0 1
+chat_message;message;string;0 1;;observable:messageText;observable:MessageFacet;string;0 1
+chat_message;messageId;string;0 1;;observable:messageID;observable:MessageFacet;string;0 1
+chat_message;sentOn;DateTime;0 1;;observable:sentTime;observable:MessageFacet;DateTime;0 1
+chat_message;sessionId;string;0 1;;observable:sessionID;observable:MessageFacet;string;0 1
+chat_message;to;string;0 *;list;observable:to;observable:MessageFacet;string;0 *

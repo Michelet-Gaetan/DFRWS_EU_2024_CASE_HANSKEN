@@ -1,0 +1,22 @@
+entity_hansken;property_hansken;format_hansken;cardinality_hansken;datastructure_hansken;property_CASE;entity_CASE;format_CASE;cardinality_CASE
+;;;;;core:hasFacet;observable:EmailMessage;object property, range: observable:EmailMessageFacet;0 *
+;;string;0 1;;observable:body;observable:EmailMessageFacet;string;0 1
+email;application;string;0 1;;observable:application;observable:EmailMessageFacet;string;0 1
+email;bcc;string;0 *;list;observable:bcc;observable:EmailMessageFacet;string;0 *
+email;categories;string;0 *;map;observable:categories;observable:EmailMessageFacet;string;0 *
+email;cc;string;0 *;list;observable:cc;observable:EmailMessageFacet;string;0 *
+email;created_on;DateTime;0 1;;core:objectCreatedTime;observable:EmailMessage;DateTime;0 1
+email;from;string;0 1;;observable:from;observable:EmailMessageFacet;string;0 1
+email;hasAttachment;boolean;0 1;;observable:isMultipart;observable:EmailMessageFacet;boolean;0 1
+email;headers;string;0 *;map;observable:headerRaw;observable:EmailMessageFacet;string;0 1
+email;in_reply_to;string;0 1;;observable:inReplyTo;observable:EmailMessageFacet;string;0 1
+email;labels;string;0 *;map;observable:labels;observable:EmailMessageFacet;string;0 *
+email;message_id;string;0 1;;observable:messageID;observable:EmailMessageFacet;string;0 1
+email;modified_on;DateTime;0 1;;observable:modifiedTime;observable:EmailMessageFacet;DateTime;0 1
+email;priority;string;0 1;;observable:priority;observable:EmailMessageFacet;string;0 1
+email;read;boolean;0 1;;observable:isRead;observable:EmailMessageFacet;boolean;0 1
+email;received_on;DateTime;0 1;;observable:receivedTime;observable:EmailMessageFacet;DateTime;0 1
+email;references;string;0 *;list;observable:references;observable:EmailMessageFacet;string;0 *
+email;sent_on;DateTime;0 1;;observable:sentTime;observable:EmailMessageFacet;DateTime;0 1
+email;subject;string;0 1;;observable:subject;observable:EmailMessageFacet;string;0 1
+email;to;string;0 *;list;observable:to;observable:EmailMessageFacet;string;0 *
