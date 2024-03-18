@@ -8,8 +8,6 @@ If you want to learn more about the status of the project, you can go and check 
 
 # Workshop
 
-In the _project.py_ file, the environment variables as well as the default are found and/or can be configured. This is where you will have to enter the provided credentials before running other scripts!
-
 The mapping_csv_to_script.py file is there to automatically generate the transformation functions for the emails and chatMessages. This is done using a CSV file describing the maping between the Hansken trace model and the CASE ontology. To generate those functions, simply run the file and adjust the maping_file (line 179) variable to generate the correct function. This should be either "hansken_case_email.csv" or "hansken_case_chat.csv".
 
 You can the run the other scripts (export_example_email.py / export_example_chat.py / export_example_global.py) to transform the extracted emails, extracted chatmessages or both of them into CASE json-ld format.
